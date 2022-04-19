@@ -1,0 +1,19 @@
+button:
+  about: Over
+  back: Terug
+  go: Ga
+  home: Start
+  toggle_dark: Donkermodus inschakelen
+  toggle_langs: Taal veranderen
+  anotherone: Nog één
+intro:
+  desc: Word goed met kleurnamen
+  dynamic-route: Demo van dynamische route
+  hi: Hoi, {name}!
+  aka: Ook bekend als
+  whats-your-name: Wat is je naam?
+  indevelopment: Deze app is in ontwikkeling. Hier heb je een kleur in de tussentijd!
+locales:
+  en: Engels
+  nl: Nederlands
+not-found: Niet gevonden

@@ -1,0 +1,162 @@
+@import './markdown.css';
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13,148,136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:2;
+}
+
+.header-wrapper{
+  margin: 0 auto;
+  max-width: 1065px;
+  min-height: 70px;
+}
+
+.scroller{
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page{
+  align-items: center;
+  display: flex;
+  min-height: calc(100vh - var(--onetrust-banner-height, 0px));
+  position: relative;
+  z-index: 1;
+}
+
+.card-wrapper{
+  display:flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.relative{
+  position:relative;
+}
+.bottom{
+  position:absolute;
+  bottom:5px;
+  width:calc(100% - 32px);
+  text-align:center;
+  margin:0 auto;
+}
+
+.round-buttons{
+  position:relative;
+  bottom:-20px;
+}
+
+.buttons{
+  position:absolute;
+  bottom:20%;
+  margin:0 auto;
+  left:0;
+  right:0;
+  align-items:center;
+
+}
+
+#innercontainer{
+  height:150px;
+}
+
+#answerbox{
+  background-color:white;
+  border: 2px solid #BBBBBB;
+  padding: 15px;
+  box-shadow: 5px 5px 10px
+  rgba(0,0,0,0.2);
+  max-width:400px;
+  height:100px;
+  position:relative;
+  margin: 0 auto;
+  border-radius: 30px 30px;
+}
+
+#answerinput{
+  height: 100%;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#answerinput:focus{
+  outline:none;
+}
+
+.middle{
+  margin: 0 auto;
+}
+
+#content {
+  flex: 1;
+  height:100%;
+}
+
+.sidelist{
+  position:absolute;
+  right:20px;
+  top:20px;
+  bottom:20px;
+  overflow-y:auto;
+  width:300px;
+  text-align:center;
+  border: 1px solid black;
+}
+
+.sidelist::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba(245, 245, 245, 0);
+}
+
+.sidelist::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: rgba(245, 245, 245, 0);
+}
+
+.sidelist::-webkit-scrollbar-thumb
+{
+  background-color: #ffffff;
+}
+
+@media (max-width:900px){
+  .card-wrapper{
+    flex-direction:column;
+  }
+
+  .retry{
+    bottom:10%;
+  }
+}

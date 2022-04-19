@@ -1,0 +1,22 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  anotherone: Give me a new one
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change language
+  iknewthis: I knew this
+  lessofthis: Show me less about {subject}
+  next: Next
+intro:
+  desc: Get good with color names
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+  indevelopment: This app is in development. But in the mean-time, here's a random color!
+locales:
+  en: English
+  nl: Dutch
+not-found: Not found
